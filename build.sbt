@@ -7,5 +7,5 @@ lazy val root = (project in file(".")).
     )),
     name := "ArrayInversions",
     fork := true,
-    javaOptions ++= Seq("-Xmx10G", "-Xss2M")
+    javaOptions ++= Seq("-Xmx20G", "-Xss128M")
   )
