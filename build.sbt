@@ -6,5 +6,6 @@ lazy val root = (project in file(".")).
       version      := "0.1.0-SNAPSHOT"
     )),
     name := "ArrayInversions",
-    javaOptions += "-Xms2G -Xmx24G -Xss1G -XX:+CMSClassUnloadingEnabled"
+    fork := true,
+    javaOptions ++= Seq("-Xmx10G", "-Xss2M")
   )
